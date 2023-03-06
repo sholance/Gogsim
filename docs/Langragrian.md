@@ -128,7 +128,7 @@ console.log(particlePositions);
 
 ****Notes we started with.
 
-<!-- The Lagrangian model is what we will be using to simulate the movement of marine litter in the Gulf Of Guinea. The model will help us in calculating the movement of marine litter based on the ocean currents and winds.
+> The Lagrangian model is what we will be using to simulate the movement of marine litter in the Gulf Of Guinea. The model will help us in calculating the movement of marine litter based on the ocean currents and winds.
 
 How we can use the Lagrangian model to simulate the movement of marine litter in the Gulf of Guinea:
 
@@ -147,4 +147,4 @@ where u and v are the components of the velocity field and Δt is the time step.
 
 This article might be a lot to take in, but it's a good start (https://www.tandfonline.com/doi/full/10.1080/1755876X.2019.1611708?src=recsys). If you have any questions, feel free to raise a question in FAQ
 
-First iteration of the Lagrangian model is in the docs folder (LangrangianCodeV0.ts), final and current usable iteration is (LangrangianCode.ts). The model is written in Typescript and can be used in a React app. Will be adding more documentation to the model soon. -->
+First iteration of the Lagrangian model is in the docs folder (LangrangianCodeV0.ts), final and current usable iteration is (LangrangianCode.ts). The model is written in Typescript and can be used in a React app. Will be adding more documentation to the model soon.
