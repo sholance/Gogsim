@@ -1,5 +1,6 @@
 CODE DOCUMENTATION
 
+> First iteration of the Lagrangian model is in the docs folder (LangrangianCodeV0.ts), final and current usable iteration is (LangrangianCode.ts). The model is written in Typescript and can be used in a React app. Will be adding more documentation to the model soon.
 
 
 The Lagrangian Model simulates the movement of particles in a fluid. It takes as input the number of particles, their initial position and size, and the current speed and direction of the fluid.
@@ -166,4 +167,3 @@ where u and v are the components of the velocity field and Δt is the time step.
 
 This article might be a lot to take in, but it's a good start (https://www.tandfonline.com/doi/full/10.1080/1755876X.2019.1611708?src=recsys). If you have any questions, feel free to raise a question in FAQ
 
-First iteration of the Lagrangian model is in the docs folder (LangrangianCodeV0.ts), final and current usable iteration is (LangrangianCode.ts). The model is written in Typescript and can be used in a React app. Will be adding more documentation to the model soon.
