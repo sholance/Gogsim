@@ -1,5 +1,5 @@
-CODE DOCUMENTATION
-
+**CODE DOCUMENTATION
+**
 The `LagrangianModel` simulates the movement of particles in a fluid. It takes as input the number of particles, their initial position and size, and the current speed and direction of the fluid.
 
 It initializes the particles with zero velocity and random positions within a given range. It then updates the particle positions and velocities based on the current speed and direction of the fluid, as well as any wind velocity that is applied. The model assumes that the particles move with the fluid, but are not affected by it, and that they are small enough that they can be treated as point particles.
@@ -35,7 +35,7 @@ The `LagrangianModel` class has the following methods:
 
 
 **GENERIC USAGE
-
+**
 Sample code
 ```Typescript
 model.simulate(100, 10, 10);
@@ -45,7 +45,7 @@ model.simulate(100, 10, 10);
 In the example usage of the LagrangianModel class, we simulate the movement of 100 particles for 100 iterations. The particles move at a speed of 10 m/s in a direction of 10 degrees.
 
 **USING IN A REACT APP (Typescript)
-
+**
 Step 1: 
 Install the package(package will be published to npm soon):
 
