@@ -49,8 +49,10 @@ Install the package(package will be published to npm soon):
 
 Import the `LagrangianModel` class from the package (import from docs folder for now):
 
-`import { LagrangianModel } from '../docs/LagrangianModel';`
+```Typescript
+import { LagrangianModel } from '../docs/LagrangianModel';
 
+```
 step 2:
 Provide particle data in the following format:
 ```TypeScript
@@ -88,29 +90,39 @@ const particlesSample = [  {
 Step 3: 
 Define the input parameters for the model:
 
-`const modelInput: ModelInput = { particleCount: particlesSample.length, particles: particlesSample,  currentSpeed: 0.5, currentDirection: 0, };`
+```Typescript
+const modelInput: ModelInput = { particleCount: particlesSample.length, particles: particlesSample,  currentSpeed: 0.5, currentDirection: 0, };
+```
 
 Step 4:
 Create an instance of the `LagrangianModel` class:
 
-`const model = new LagrangianModel(modelInput);`
+```Typescript
+const model = new LagrangianModel(modelInput);
 
+```
 Step 5:
 Call the `simulate()` method to simulate the movement of particles for a specified amount of time, wind speed and wind direction:
 
-`model.simulate(100, 10, 10);`
+```Typescript
+model.simulate(100, 10, 10);
 
+```
 Step 6:
 Call the `getParticlePositions()` method to get the current position of all particles:
 
-`const particlePositions = model.getParticlePositions();`
+```Typescript
+const particlePositions = model.getParticlePositions();
 
+```
 This will return an array of [x, y] positions for each particle.
 
 To log the positions of all particles to the console, you can use the following code:
 
-`console.log(particlePositions);`
+```Typescript
+console.log(particlePositions);
 
+```
 
 ****Notes we started with.
 
