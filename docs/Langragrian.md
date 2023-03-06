@@ -2,7 +2,7 @@ CODE DOCUMENTATION
 
 
 
-The `LagrangianModel` simulates the movement of particles in a fluid. It takes as input the number of particles, their initial position and size, and the current speed and direction of the fluid.
+The Lagrangian Model simulates the movement of particles in a fluid. It takes as input the number of particles, their initial position and size, and the current speed and direction of the fluid.
 
 It initializes the particles with zero velocity and random positions within a given range. It then updates the particle positions and velocities based on the current speed and direction of the fluid, as well as any wind velocity that is applied. The model assumes that the particles move with the fluid, but are not affected by it, and that they are small enough that they can be treated as point particles.
 
