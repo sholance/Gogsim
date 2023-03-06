@@ -12,25 +12,43 @@ The LagrangianModel class simulates the movement of particles based on the input
 
 The `ModelInput` interface defines the input parameters for the simulation. It includes the following properties:
 
-`particles`: an array of particles
+`particles`: an array of particles.
+
 `particleCount`: the number of particles in the simulation
+
 `currentSpeed`: the speed at which the particles are moving
+
 `currentDirection`: the direction in which the particles are moving
+
+
+
 The `Particle` interface defines the properties of a particle. It includes the following properties:
 
 `position`: the current position of the particle represented as an array with two numbers indicating the x and y coordinates
+
 `velocity`: the current velocity of the particle represented as an array with two numbers indicating the x and y components of the velocity vector
-`size`: the size of the particle
-`mass`: the mass of the particle
-`id`: the id of the particle
-`type`: the type of the particle
-`timestep`: the timestep of the particle
+
+`size`: the size of the particle.
+
+`mass`: the mass of the particle (optional).
+
+`id`: the id of the particle.
+
+`type`: the type of the particle (optional).
+
+`timestep`: the timestep of the particle.
+
+
 The `LagrangianModel` class has the following methods:
 
 `constructor(input: ModelInput)`: initializes the `input` and `particles` properties of the class based on the input provided. It creates an array of `particles` based on the `particleCount` input and initializes their `position`, `velocity`, and `size` properties.
+
 `updatePositions()`: updates the `position` of each particle based on the `currentSpeed` and `currentDirection` input. It calculates the velocity vector based on the `currentSpeed` and `currentDirection` input and updates the position of each particle based on their current position and velocity.
+
 `updateVelocities()`: updates the `velocity` of each particle based on wind conditions. It calculates the wind vector based on the `windSpeed` and `windDirection` input and updates the velocity of each particle based on their current velocity.
+
 `simulate(time: number)`: simulates the movement of particles for a specified amount of `time`. It repeatedly calls the `updatePositions()` and `updateVelocities()` methods for `time` number of iterations.
+
 `getParticlePositions()`: returns the current `position` of all particles as an array of arrays, where each inner array contains the x and y coordinates of a particle.
 `getParticle()`: returns the `particles` array. 
 
