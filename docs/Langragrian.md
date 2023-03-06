@@ -37,8 +37,10 @@ The `LagrangianModel` class has the following methods:
 **GENERIC USAGE
 
 Sample code
-`model.simulate(100, 10, 10);`
+```Typescript
+model.simulate(100, 10, 10);
 
+```
 
 In the example usage of the LagrangianModel class, we simulate the movement of 100 particles for 100 iterations. The particles move at a speed of 10 m/s in a direction of 10 degrees.
 
